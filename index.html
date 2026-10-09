@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Crypto Lab · learn crypto with paper money</title>
+  <meta name="description" content="Crypto Lab: an all-in-one crypto learning app. Mining calculator, paper investing and leverage trading on real prices, tokenomics designer, Bitcoin address lookups, passive income and tax calculators. Educational only." />
+  <meta name="theme-color" content="#0a0b10" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-IUyGf+m3E1UP8b1eGZ/M7UYjg9WVyMMS0kGt3SDaOyg='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://coin-images.coingecko.com https://assets.coingecko.com; connect-src 'self' https://api.coingecko.com https://data-api.binance.vision https://api.exchange.coinbase.com https://api.coinbase.com https://mempool.space https://blockstream.info https://blockchain.info https://api.coinpaprika.com https://api.frankfurter.dev https://api.alternative.me; object-src 'none'; base-uri 'self'; form-action 'none'" />
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js", { scope: "./" }).catch(function () {});</script>
+  <link rel="stylesheet" href="css/app.css?v=1" />
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#home" aria-label="Crypto Lab home">
+      <img src="favicon.svg" alt="" width="34" height="34" />
+      <div><p class="eyebrow">Paper money · learning only</p><h1>Crypto Lab</h1></div>
+    </a>
+    <div class="top-right">
+      <span id="net" class="net" title="Network status">●</span>
+      <select id="cur" aria-label="Display currency"><option value="AUD">AUD</option><option value="USD">USD</option></select>
+    </div>
+  </header>
+  <div id="alerts" class="alerts" aria-live="polite"></div>
+  <main id="view" tabindex="-1"><p class="loading">Loading…</p></main>
+  <footer class="foot">
+    <p><b>Educational only. Not financial advice.</b> All trading and investing here is paper money. Crypto Lab never connects to wallets, never asks for seed phrases or private keys and never places real trades. Prices come from public APIs, shown with source and time; check before relying on them.</p>
+    <p><a href="#learn">Learn</a> · <a href="#sources">Data sources</a> · <a href="#settings">Backup &amp; settings</a></p>
+  </footer>
+  <nav class="bottom" aria-label="Main">
+    <a href="#home" data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg><span>Home</span></a>
+    <a href="#markets" data-tab="markets"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg><span>Markets</span></a>
+    <a href="#trade" data-tab="trade"><svg viewBox="0 0 24 24"><path d="M7 4v16M17 4v16M4 8h6v6H4zM14 10h6v6h-6z"/></svg><span>Trade</span></a>
+    <a href="#mining" data-tab="mining"><svg viewBox="0 0 24 24"><path d="M14 4l6 6M4 20l9-9M12 5l7 7-3 3-7-7z"/></svg><span>Mining</span></a>
+    <a href="#more" data-tab="more"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg><span>More</span></a>
+  </nav>
+  <script type="module" src="js/app.js?v=1"></script>
+</body>
+</html>

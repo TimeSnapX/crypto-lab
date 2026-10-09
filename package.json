@@ -1,0 +1,13 @@
+{
+  "name": "crypto-lab",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Crypto Lab: learn crypto with paper money (static PWA, no build)",
+  "type": "module",
+  "scripts": {
+    "serve": "node tests/server.mjs 4180",
+    "test:unit": "node tests/unit.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "test:live": "node tests/live.mjs"
+  }
+}
